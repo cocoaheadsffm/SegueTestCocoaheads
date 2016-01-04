@@ -14,6 +14,7 @@
 		54DE62E31C3AD0A500FE0F28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DE62E11C3AD0A500FE0F28 /* LaunchScreen.storyboard */; };
 		54DE62EB1C3AD2E600FE0F28 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE62EA1C3AD2E600FE0F28 /* MapKit.framework */; };
 		54DE62EE1C3AD8FD00FE0F28 /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE62ED1C3AD8FD00FE0F28 /* SegueHandlerType.swift */; };
+		54DE62F01C3AD97400FE0F28 /* UIImageAssetIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE62EF1C3AD97400FE0F28 /* UIImageAssetIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		54DE62E41C3AD0A500FE0F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54DE62EA1C3AD2E600FE0F28 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		54DE62ED1C3AD8FD00FE0F28 /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
+		54DE62EF1C3AD97400FE0F28 /* UIImageAssetIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageAssetIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				54DE62D81C3AD0A500FE0F28 /* AppDelegate.swift */,
 				54DE62DA1C3AD0A500FE0F28 /* WeatherMainViewController.swift */,
+				54DE62EF1C3AD97400FE0F28 /* UIImageAssetIdentifier.swift */,
 				54DE62ED1C3AD8FD00FE0F28 /* SegueHandlerType.swift */,
 				54DE62DC1C3AD0A500FE0F28 /* Main.storyboard */,
 				54DE62DF1C3AD0A500FE0F28 /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 				54DE62DB1C3AD0A500FE0F28 /* WeatherMainViewController.swift in Sources */,
 				54DE62EE1C3AD8FD00FE0F28 /* SegueHandlerType.swift in Sources */,
 				54DE62D91C3AD0A500FE0F28 /* AppDelegate.swift in Sources */,
+				54DE62F01C3AD97400FE0F28 /* UIImageAssetIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

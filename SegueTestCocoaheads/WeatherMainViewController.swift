@@ -18,7 +18,11 @@ class WeatherMainViewController: UIViewController, SegueHandlerType {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let img = UIImage(assetIdentifier: .Cloudy)
+        print(" -> \(img)")
+
+        
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
