@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeatherMainViewController: UIViewController {
+class WeatherMainViewController: UIViewController, SegueHandlerType {
     enum SegueIndentifier:String {
         case SettingsIdentifier   = "SettingsIdentifier"
         case MapIdentifier        = "MapIdentifier"
@@ -23,15 +23,7 @@ class WeatherMainViewController: UIViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        
-        guard let
-            identifier = segue.identifier,
-            segueIdentifier = SegueIndentifier(rawValue: identifier)
-            else {
-                fatalError("🙉no valid identifier \(segue.identifier)")
-        }
-        
-        switch segueIdentifier {
+        switch segueIdentifierForSegue(segue) {
         case .SettingsIdentifier:
             print("SettingsIdentifier")
         case .MapIdentifier:
@@ -45,10 +37,7 @@ class WeatherMainViewController: UIViewController {
     @IBAction func mapAction(sender: UIButton) {
         performSegueWithIdentifier(.MapIdentifier, sender: sender)
     }
-    
-    func performSegueWithIdentifier(identifier: SegueIndentifier, sender: AnyObject?) {
-        performSegueWithIdentifier(identifier.rawValue, sender: sender)
-    }
+
 
 }
 
