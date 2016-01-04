@@ -9,24 +9,36 @@
 import UIKit
 
 class WeatherMainViewController: UIViewController {
+    enum SegueIndentifier:String {
+        case SettingsIdentifier   = "SettingsIdentifier"
+        case MapIdentifier        = "MapIdentifier"
+        case ForecastIdentifier   = "ForecastIdentifier"
+    }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        switch segue.identifier {
-        case "SettingsIdentifier"?:
-            print("SettingsIdentifier")
-        case "MapIdentifier"?:
-            print("MapIdentifier")
-        case "ForecastIdentifier"?:
-            print("ForecastIdentifier")
-        default:
-            fatalError("🙉no valid identifier \(segue.identifier)")
+        
+        
+        guard let
+            identifier = segue.identifier,
+            segueIdentifier = SegueIndentifier(rawValue: identifier)
+            else {
+                fatalError("🙉no valid identifier \(segue.identifier)")
         }
         
+        switch segueIdentifier {
+        case .SettingsIdentifier:
+            print("SettingsIdentifier")
+        case .MapIdentifier:
+            print("MapIdentifier")
+        case .ForecastIdentifier:
+            print("ForecastIdentifier")
+        }
     }
 
 
