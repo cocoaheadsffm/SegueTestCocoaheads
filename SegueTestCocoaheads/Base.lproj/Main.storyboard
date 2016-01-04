@@ -43,12 +43,21 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIB-WS-ats">
+                                <rect key="frame" x="12" y="118" width="84" height="30"/>
+                                <state key="normal" title="Manual Map"/>
+                                <connections>
+                                    <action selector="mapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AlF-CT-2fE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="l9L-Dh-wSd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="5ip-jV-hcq"/>
                             <constraint firstAttribute="trailing" secondItem="l9L-Dh-wSd" secondAttribute="trailing" constant="12" id="AgH-E8-0GL"/>
                             <constraint firstItem="l9L-Dh-wSd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="12" id="DZG-uj-ETK"/>
+                            <constraint firstItem="NIB-WS-ats" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="12" id="gwn-9z-x3p"/>
+                            <constraint firstItem="NIB-WS-ats" firstAttribute="top" secondItem="l9L-Dh-wSd" secondAttribute="bottom" constant="12" id="igN-MF-pfz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Olf-0i-yDO"/>

@@ -30,5 +30,9 @@ class WeatherMainViewController: UIViewController {
     }
 
 
+    @IBAction func mapAction(sender: UIButton) {
+        performSegueWithIdentifier("MapIdentifier", sender: sender)
+
+    }
 }
 
