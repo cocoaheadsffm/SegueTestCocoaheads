@@ -38,7 +38,7 @@
                                         <rect key="frame" x="384" y="0.0" width="192" height="30"/>
                                         <state key="normal" title="Map"/>
                                         <connections>
-                                            <segue destination="MuL-Ji-X1e" kind="show" identifier="MapIdentifier" id="TwL-se-lPi"/>
+                                            <segue destination="n2o-6W-ONO" kind="show" identifier="MapIdentifier" id="TwL-se-lPi"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -67,35 +67,6 @@
             <point key="canvasLocation" x="1041" y="345"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="PnW-x0-SOV">
-            <objects>
-                <viewController id="MuL-Ji-X1e" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MF4-E2-Gjn"/>
-                        <viewControllerLayoutGuide type="bottom" id="IEt-Jb-BhZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0Or-8d-3KF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uSO-oH-lod">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="IEt-Jb-BhZ" firstAttribute="top" secondItem="uSO-oH-lod" secondAttribute="bottom" id="NLQ-ep-luu"/>
-                            <constraint firstItem="uSO-oH-lod" firstAttribute="top" secondItem="0Or-8d-3KF" secondAttribute="top" id="OrP-4D-mj7"/>
-                            <constraint firstAttribute="trailing" secondItem="uSO-oH-lod" secondAttribute="trailing" id="fog-hC-EU2"/>
-                            <constraint firstItem="uSO-oH-lod" firstAttribute="leading" secondItem="0Or-8d-3KF" secondAttribute="leading" id="st6-ps-46L"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aby-4s-bK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1840" y="345"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="4Kc-QH-Sl7">
             <objects>
                 <viewController id="Olv-9V-cLj" sceneMemberID="viewController">
@@ -111,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9L8-4V-jOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906" y="1060"/>
+            <point key="canvasLocation" x="930" y="1164"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bfe-1t-0vH">
@@ -129,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y3Q-of-XQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1574" y="1152"/>
+            <point key="canvasLocation" x="1812" y="1090"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="deV-yp-OWb">
@@ -148,6 +119,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EA9-Cl-dqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="229" y="345"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="Zdk-eg-UaH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="n2o-6W-ONO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eW6-vW-adk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840" y="345"/>
         </scene>
     </scenes>
 </document>
